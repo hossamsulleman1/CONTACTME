@@ -16,10 +16,6 @@ import IconButton from "@material-ui/core/IconButton";
 import "../App.css";
 import Preview from "./Preview";
 import FormatListNumberedIcon from "@material-ui/icons/FormatListNumbered";
-import AssignmentTurnedInIcon from "@material-ui/icons/AssignmentTurnedIn";
-import AssignmentReturnIcon from "@material-ui/icons/AssignmentReturn";
-import AssignmentLateIcon from "@material-ui/icons/AssignmentLate";
-import AssignmentIcon from "@material-ui/icons/Assignment";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -82,6 +78,23 @@ export default function IconNav() {
           scrollButtons="auto"
           aria-label="scrollable auto tabs example"
         >
+          <div className="floatRight">
+            <IconButton
+              aria-label="delete"
+              href="https://semptiareact.web.app/"
+            >
+              <HomeWorkIcon></HomeWorkIcon>
+            </IconButton>
+          </div>
+          <div className="floatRight">
+            <IconButton
+              aria-label="delete"
+              href="https://semptiareact.web.app/"
+            >
+              <FormatListNumberedIcon></FormatListNumberedIcon>
+              {/* GOES TO SEMPTIA TASK TRACKING PAGE  */}
+            </IconButton>
+          </div>
           {/* <div className="floatRight">
             <IconButton
               aria-label="delete"
@@ -97,62 +110,37 @@ export default function IconNav() {
           <Tab label="Snapchat" {...a11yProps(4)} />
           <Tab label="Discord" {...a11yProps(5)} />
           <Tab icon={<MeetingRoomIcon />} {...a11yProps(6)} />
-          <Tab icon={<AssignmentIcon />} {...a11yProps(6)} />
-
-          <div className="flexbox">
-            <div className="floatRight">
-              <IconButton
- 
- color="primary"
-                aria-label="delete"
-                href="https://semptiareact.web.app/"
-              >
-                <AssignmentReturnIcon />
-                {/* GOES TO SEMPTIA TASK TRACKING PAGE  */}
-              </IconButton>
-            </div>
-            <div className="floatRight">
-              <IconButton
-              color="primary"
-                aria-label="delete"
-                href="https://semptiareact.web.app/"
-              >
-                <AssignmentLateIcon />
-                {/* GOES TO SEMPTIA TASK TRACKING PAGE  */}
-              </IconButton>
-            </div>
-            <div className="floatRight">
-              <IconButton
-              color="primary"
-                aria-label="delete"
-                href="https://semptiareact.web.app/"
-              >
-                <AssignmentTurnedInIcon />
-                {/* GOES TO SEMPTIA TASK TRACKING PAGE  */}
-              </IconButton>
-            </div>
-            {/* these buttons can find info on task complete a task ect as a snackbar notif  */}
-            <div className="floatRight">
-              <IconButton
-              color="primary"
-                aria-label="delete"
-                href="https://semptiareact.web.app/"
-              >
-                <HomeWorkIcon></HomeWorkIcon>
-              </IconButton>
-            </div>
-            <div className="floatRight">
-              <IconButton
-              color="primary"
-                aria-label="delete"
-                href="https://semptiareact.web.app/"
-              >
-                <FormatListNumberedIcon></FormatListNumberedIcon>
-                {/* GOES TO SEMPTIA TASK TRACKING PAGE  */}
-              </IconButton>
-            </div>
-          </div>
         </Tabs>
+        <div className="flexbox">
+        <div className="floatRight">
+            <IconButton
+              aria-label="delete"
+              href="https://semptiareact.web.app/"
+            >
+              <FormatListNumberedIcon></FormatListNumberedIcon>
+              {/* GOES TO SEMPTIA TASK TRACKING PAGE  */}
+            </IconButton>
+          </div>
+          <div className="floatRight">
+            <IconButton
+              aria-label="delete"
+              href="https://semptiareact.web.app/"
+            >
+              <FormatListNumberedIcon></FormatListNumberedIcon>
+              {/* GOES TO SEMPTIA TASK TRACKING PAGE  */}
+            </IconButton>
+          </div>
+          <div className="floatRight">
+            <IconButton
+              aria-label="delete"
+              href="https://semptiareact.web.app/"
+            >
+              <FormatListNumberedIcon></FormatListNumberedIcon>
+              {/* GOES TO SEMPTIA TASK TRACKING PAGE  */}
+            </IconButton>
+          </div>
+        </div>
+       
       </AppBar>
       <TabPanel value={value} index={0}>
         <Preview></Preview>

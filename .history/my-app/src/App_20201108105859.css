@@ -4,10 +4,7 @@
 
 .floatRight {
   float: right;
-}
-
-.flexbox {
- display: flex;
+  padding-left: 40px;
 }
 
 .App-logo {

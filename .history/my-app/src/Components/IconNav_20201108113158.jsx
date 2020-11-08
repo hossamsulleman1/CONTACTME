@@ -143,7 +143,6 @@ export default function IconNav() {
             </div>
             <div className="floatRight">
               <IconButton
-              color="primary"
                 aria-label="delete"
                 href="https://semptiareact.web.app/"
               >

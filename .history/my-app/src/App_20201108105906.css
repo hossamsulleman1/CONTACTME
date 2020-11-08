@@ -6,10 +6,6 @@
   float: right;
 }
 
-.flexbox {
- display: flex;
-}
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;

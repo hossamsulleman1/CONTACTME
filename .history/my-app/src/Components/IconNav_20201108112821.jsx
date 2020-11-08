@@ -19,7 +19,6 @@ import FormatListNumberedIcon from "@material-ui/icons/FormatListNumbered";
 import AssignmentTurnedInIcon from "@material-ui/icons/AssignmentTurnedIn";
 import AssignmentReturnIcon from "@material-ui/icons/AssignmentReturn";
 import AssignmentLateIcon from "@material-ui/icons/AssignmentLate";
-import AssignmentIcon from "@material-ui/icons/Assignment";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -97,13 +96,10 @@ export default function IconNav() {
           <Tab label="Snapchat" {...a11yProps(4)} />
           <Tab label="Discord" {...a11yProps(5)} />
           <Tab icon={<MeetingRoomIcon />} {...a11yProps(6)} />
-          <Tab icon={<AssignmentIcon />} {...a11yProps(6)} />
 
           <div className="flexbox">
             <div className="floatRight">
               <IconButton
- 
- color="primary"
                 aria-label="delete"
                 href="https://semptiareact.web.app/"
               >
@@ -113,7 +109,6 @@ export default function IconNav() {
             </div>
             <div className="floatRight">
               <IconButton
-              color="primary"
                 aria-label="delete"
                 href="https://semptiareact.web.app/"
               >
@@ -123,7 +118,6 @@ export default function IconNav() {
             </div>
             <div className="floatRight">
               <IconButton
-              color="primary"
                 aria-label="delete"
                 href="https://semptiareact.web.app/"
               >
@@ -131,10 +125,9 @@ export default function IconNav() {
                 {/* GOES TO SEMPTIA TASK TRACKING PAGE  */}
               </IconButton>
             </div>
-            {/* these buttons can find info on task complete a task ect as a snackbar notif  */}
+{/* these buttons can find info on task complete a task ect  */}
             <div className="floatRight">
               <IconButton
-              color="primary"
                 aria-label="delete"
                 href="https://semptiareact.web.app/"
               >
@@ -143,7 +136,6 @@ export default function IconNav() {
             </div>
             <div className="floatRight">
               <IconButton
-              color="primary"
                 aria-label="delete"
                 href="https://semptiareact.web.app/"
               >

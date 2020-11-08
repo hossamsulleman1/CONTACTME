@@ -103,7 +103,7 @@ export default function IconNav() {
             <div className="floatRight">
               <IconButton
  
- color="primary"
+ 
                 aria-label="delete"
                 href="https://semptiareact.web.app/"
               >
@@ -113,7 +113,7 @@ export default function IconNav() {
             </div>
             <div className="floatRight">
               <IconButton
-              color="primary"
+              
                 aria-label="delete"
                 href="https://semptiareact.web.app/"
               >
@@ -123,7 +123,7 @@ export default function IconNav() {
             </div>
             <div className="floatRight">
               <IconButton
-              color="primary"
+              
                 aria-label="delete"
                 href="https://semptiareact.web.app/"
               >
@@ -134,7 +134,7 @@ export default function IconNav() {
             {/* these buttons can find info on task complete a task ect as a snackbar notif  */}
             <div className="floatRight">
               <IconButton
-              color="primary"
+              
                 aria-label="delete"
                 href="https://semptiareact.web.app/"
               >
@@ -143,7 +143,6 @@ export default function IconNav() {
             </div>
             <div className="floatRight">
               <IconButton
-              color="primary"
                 aria-label="delete"
                 href="https://semptiareact.web.app/"
               >
