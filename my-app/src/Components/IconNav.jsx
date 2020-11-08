@@ -7,6 +7,10 @@ import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import PhoneIcon from "@material-ui/icons/Phone";
+import PageProp from "./PageProp";
+import Button from '@material-ui/core/Button';
+
+
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -69,26 +73,26 @@ export default function IconNav() {
           scrollButtons="auto"
           aria-label="scrollable auto tabs example"
         >
-          <Tab icon={<PhoneIcon />} label="Item One" {...a11yProps(0)} />
-          <Tab icon={<PhoneIcon />} label="Item Two" {...a11yProps(1)} />
-          <Tab label="SNAPCHAT" {...a11yProps(2)} />
-          <Tab label="FACEBOOK" {...a11yProps(3)} />
-          <Tab label="INSTAGRAM" {...a11yProps(4)} />
-          <Tab label="PHONE" {...a11yProps(5)} />
+          <Tab icon={<PhoneIcon />} label="Snapchat" {...a11yProps(0)} />
+          <Tab icon={<PhoneIcon />} label="Linked In" {...a11yProps(1)} />
+          <Tab label="Facebook" {...a11yProps(2)} />
+          <Tab label="Instagram" {...a11yProps(3)} />
+          <Tab label="Contact Me" {...a11yProps(4)} />
+          <Tab label="" {...a11yProps(5)} />
           <Tab label="" {...a11yProps(6)} />
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
-        Item One
+    <PageProp name="SnapChat"></PageProp>
       </TabPanel>
       <TabPanel value={value} index={1}>
-        Item Two
+      <PageProp name="Linked In"></PageProp>
       </TabPanel>
       <TabPanel value={value} index={2}>
-        Item Three
+      <PageProp name="Facebook"></PageProp>
       </TabPanel>
       <TabPanel value={value} index={3}>
-        Item Four
+      <PageProp name="Instagram"></PageProp>
       </TabPanel>
       <TabPanel value={value} index={4}>
         Item Five
