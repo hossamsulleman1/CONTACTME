@@ -13,11 +13,7 @@ function PageProp(props) {
 
     <Button>ADD INSTAGRAM</Button>
 
-    <Button>ADD FACEBOOK</Button>
-
-    <Button>ADD LINKED IN</Button>
-
-    <Button>CONTACT ME</Button>
+    <Button>ADD </Button>
 </div>
     )
 }

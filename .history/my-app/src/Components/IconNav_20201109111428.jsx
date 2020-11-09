@@ -170,7 +170,7 @@ export default function IconNav() {
       </TabPanel> */}
 
       <TabPanel value={value} index={0}>
-        <PageProp ></PageProp>
+        <PageProp name="facebook" name="Instagram"></PageProp>
       </TabPanel>
 
       <TabPanel value={value} index={1}>

@@ -97,10 +97,10 @@ export default function IconNav() {
           {/* <Tab label="Facebook" {...a11yProps(2)} />
           <Tab label="Instagram" {...a11yProps(3)} />
           <Tab label="Snapchat" {...a11yProps(4)} /> */}
-          <Tab label="CONTACT ME" {...a11yProps(0)} />
-          <Tab icon={<MeetingRoomIcon />} {...a11yProps(1)} />
-          <Tab icon={<AssignmentIcon />} {...a11yProps(2)} />
-          <Tab icon={<SmsFailedIcon />} {...a11yProps(3)} />
+          <Tab label="CONTACT ME" {...a11yProps(5)} />
+          <Tab icon={<MeetingRoomIcon />} {...a11yProps(2)} />
+          <Tab icon={<AssignmentIcon />} {...a11yProps(3)} />
+          <Tab icon={<SmsFailedIcon />} {...a11yProps(4)} />
 
           <div className="flexbox">
             <div className="floatRight">
@@ -168,27 +168,14 @@ export default function IconNav() {
       <TabPanel value={value} index={3}>
         <PageProp name="Instagram"></PageProp>
       </TabPanel> */}
-
-      <TabPanel value={value} index={0}>
-        <PageProp ></PageProp>
-      </TabPanel>
-
-      <TabPanel value={value} index={1}>
+      <TabPanel value={value} index={4}>
         Item Five
       </TabPanel>
-      <TabPanel value={value} index={3}>
+      <TabPanel value={value} index={5}>
         <BottomNav></BottomNav>
-        {/* bottom nav buttons for task complete ect then template for history on completes */}
       </TabPanel>
-      <TabPanel value={value} index={2}>
+      <TabPanel value={value} index={6}>
         {/* make this just a icon thing and have it have a load screen sucess load and this unlocks door and shows stats about door ect not a tab  */}
-        <p>TASKS </p>
-
-        <p>current task is</p>
-
-        <Button>SKIP TASK</Button>
-        <Button>COMPLETE TASK </Button>
-        <Button>UNDO TASK</Button>
       </TabPanel>
     </div>
   );

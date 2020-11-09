@@ -168,27 +168,32 @@ export default function IconNav() {
       <TabPanel value={value} index={3}>
         <PageProp name="Instagram"></PageProp>
       </TabPanel> */}
-
+     
+     
+     
       <TabPanel value={value} index={0}>
-        <PageProp ></PageProp>
+        <PageProp name="Instagram"></PageProp>
       </TabPanel>
-
+     
       <TabPanel value={value} index={1}>
         Item Five
       </TabPanel>
       <TabPanel value={value} index={3}>
         <BottomNav></BottomNav>
-        {/* bottom nav buttons for task complete ect then template for history on completes */}
       </TabPanel>
       <TabPanel value={value} index={2}>
         {/* make this just a icon thing and have it have a load screen sucess load and this unlocks door and shows stats about door ect not a tab  */}
         <p>TASKS </p>
 
-        <p>current task is</p>
+        <p>
+          current task is 
 
-        <Button>SKIP TASK</Button>
-        <Button>COMPLETE TASK </Button>
-        <Button>UNDO TASK</Button>
+        </p>
+
+<Button>SKIP TASK</Button>
+<Button>COMPLETE TASK </Button>
+<Button
+
       </TabPanel>
     </div>
   );

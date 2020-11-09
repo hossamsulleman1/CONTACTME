@@ -21,7 +21,6 @@ import AssignmentReturnIcon from "@material-ui/icons/AssignmentReturn";
 import AssignmentLateIcon from "@material-ui/icons/AssignmentLate";
 import AssignmentIcon from "@material-ui/icons/Assignment";
 import BottomNav from "./BottomNav";
-import SmsFailedIcon from "@material-ui/icons/SmsFailed";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -92,20 +91,20 @@ export default function IconNav() {
               <HomeWorkIcon></HomeWorkIcon>
             </IconButton>
           </div> */}
-          {/* <Tab icon={<PhoneIcon />} label="ME" {...a11yProps(0)} />
-          <Tab icon={<PhoneIcon />} label="Linked In" {...a11yProps(1)} /> */}
+          <Tab icon={<PhoneIcon />} label="ME" {...a11yProps(0)} />
+          <Tab icon={<PhoneIcon />} label="Linked In" {...a11yProps(1)} />
           {/* <Tab label="Facebook" {...a11yProps(2)} />
           <Tab label="Instagram" {...a11yProps(3)} />
           <Tab label="Snapchat" {...a11yProps(4)} /> */}
-          <Tab label="CONTACT ME" {...a11yProps(0)} />
-          <Tab icon={<MeetingRoomIcon />} {...a11yProps(1)} />
-          <Tab icon={<AssignmentIcon />} {...a11yProps(2)} />
-          <Tab icon={<SmsFailedIcon />} {...a11yProps(3)} />
+          <Tab label="Discord" {...a11yProps(5)} />
+          <Tab icon={<MeetingRoomIcon />} {...a11yProps(6)} />
+          <Tab icon={<AssignmentIcon />} {...a11yProps(6)} />
 
           <div className="flexbox">
             <div className="floatRight">
               <IconButton
-                color="primary"
+ 
+ color="primary"
                 aria-label="delete"
                 href="https://semptiareact.web.app/"
               >
@@ -115,7 +114,7 @@ export default function IconNav() {
             </div>
             <div className="floatRight">
               <IconButton
-                color="primary"
+              color="primary"
                 aria-label="delete"
                 href="https://semptiareact.web.app/"
               >
@@ -125,7 +124,7 @@ export default function IconNav() {
             </div>
             <div className="floatRight">
               <IconButton
-                color="primary"
+              color="primary"
                 aria-label="delete"
                 href="https://semptiareact.web.app/"
               >
@@ -136,7 +135,7 @@ export default function IconNav() {
             {/* these buttons can find info on task complete a task ect as a snackbar notif  */}
             <div className="floatRight">
               <IconButton
-                color="primary"
+              color="primary"
                 aria-label="delete"
                 href="https://semptiareact.web.app/"
               >
@@ -145,7 +144,7 @@ export default function IconNav() {
             </div>
             <div className="floatRight">
               <IconButton
-                color="primary"
+              color="primary"
                 aria-label="delete"
                 href="https://semptiareact.web.app/"
               >
@@ -156,7 +155,7 @@ export default function IconNav() {
           </div>
         </Tabs>
       </AppBar>
-      {/* <TabPanel value={value} index={0}>
+      <TabPanel value={value} index={0}>
         <Preview></Preview>
       </TabPanel>
       <TabPanel value={value} index={1}>
@@ -167,28 +166,15 @@ export default function IconNav() {
       </TabPanel>
       <TabPanel value={value} index={3}>
         <PageProp name="Instagram"></PageProp>
-      </TabPanel> */}
-
-      <TabPanel value={value} index={0}>
-        <PageProp ></PageProp>
       </TabPanel>
-
-      <TabPanel value={value} index={1}>
+      <TabPanel value={value} index={4}>
         Item Five
       </TabPanel>
-      <TabPanel value={value} index={3}>
+      <TabPanel value={value} index={5}>
         <BottomNav></BottomNav>
-        {/* bottom nav buttons for task complete ect then template for history on completes */}
       </TabPanel>
-      <TabPanel value={value} index={2}>
+      <TabPanel value={value} index={6}>
         {/* make this just a icon thing and have it have a load screen sucess load and this unlocks door and shows stats about door ect not a tab  */}
-        <p>TASKS </p>
-
-        <p>current task is</p>
-
-        <Button>SKIP TASK</Button>
-        <Button>COMPLETE TASK </Button>
-        <Button>UNDO TASK</Button>
       </TabPanel>
     </div>
   );

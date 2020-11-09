@@ -11,13 +11,7 @@ function PageProp(props) {
         ADD SNAPCHAT
     </Button>
 
-    <Button>ADD INSTAGRAM</Button>
-
-    <Button>ADD FACEBOOK</Button>
-
-    <Button>ADD LINKED IN</Button>
-
-    <Button>CONTACT ME</Button>
+    <Butto
 </div>
     )
 }

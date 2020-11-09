@@ -17,7 +17,7 @@ function PageProp(props) {
 
     <Button>ADD LINKED IN</Button>
 
-    <Button>CONTACT ME</Button>
+    <
 </div>
     )
 }
