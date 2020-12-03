@@ -4,10 +4,7 @@ import Button from '@material-ui/core/Button';
 
 function PageProp(props) {
   
-  function alert1() {
-      alert("Email: Hossamsulleman@gmail.com Number: 07738646154 ")
-  }
-
+  
     return (
 <div>
     <Button>
@@ -20,7 +17,7 @@ function PageProp(props) {
 
     <Button>ADD LINKED IN</Button>
 
-    <Button onClick={alert1}>CONTACT ME</Button>
+    <Button onClick{}>CONTACT ME</Button>
     {/* modal */}
 </div>
     )

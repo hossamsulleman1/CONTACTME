@@ -4,10 +4,8 @@ import Button from '@material-ui/core/Button';
 
 function PageProp(props) {
   
-  function alert1() {
-      alert("Email: Hossamsulleman@gmail.com Number: 07738646154 ")
-  }
-
+  
+    
     return (
 <div>
     <Button>
