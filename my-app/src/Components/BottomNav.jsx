@@ -132,11 +132,10 @@ export default function BottomNav() {
       <CssBaseline />
       <Paper square className={classes.paper}>
         <Typography className={classes.text} variant="h5" gutterBottom>
-          TASK TRACKER
+          
         </Typography>
-        <p>CURRENT TASK IS:</p>
-        <p>NEXT TASK IS:</p>
-        {/* GREY SUBTITLES SMALLER TEXT  */}
+     
+        
         <List className={classes.list}>
           {messages.map(({ id, primary, secondary, person }) => (
             <React.Fragment key={id}>
