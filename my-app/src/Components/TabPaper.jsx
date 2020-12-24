@@ -5,7 +5,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Content from './Content';
 import BottomBar from './BottomBar';
 import UserList from './UserList';
-import TabPaper from './TabPaper';
+import TabsP from './TabsP';
 
 const useStyles = makeStyles((theme) => ({
     paper: {
@@ -20,14 +20,14 @@ const useStyles = makeStyles((theme) => ({
 
   }));
 
-function MainPage () {
+function TabPaper () {
     const classes = useStyles();
 return (
 
     <Grid container direction="column">
     <Grid item>
       {/* this is where the header will be  */}
-      <BottomBar></BottomBar>
+      <TabsP></TabsP>
     </Grid>
             {/* grids can be items grids containers or both at the same time  */}
     <Grid item container>
@@ -36,8 +36,7 @@ return (
 
 <Grid item xs={12} sm={8}>
 {/* this is where the content will be  */}
-<Content></Content>
-<TabPaper></TabPaper>
+
 
 </Grid>
       
@@ -50,4 +49,4 @@ return (
 
 }
 
-export default MainPage;
+export default TabPaper;

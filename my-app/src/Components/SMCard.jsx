@@ -5,10 +5,10 @@ import '../Css/Card.css'
 function SMCard() {
 
     return (
-        <body>
+        
 <div className="container">
   <div className="card">
-    <h3 className="title">Card 1</h3>
+    <h3 className="title">Snapchat</h3>
     <div className="bar">
       <div className="emptybar"></div>
       <div className="filledbar"></div>
@@ -20,7 +20,7 @@ function SMCard() {
     </div>
   </div>
   <div className="card">
-    <h3 className="title">Card 2</h3>
+    <h3 className="title">Instagram</h3>
     <div className="bar">
       <div className="emptybar"></div>
       <div className="filledbar"></div>
@@ -32,7 +32,7 @@ function SMCard() {
     </div>
   </div>
   <div className="card">
-    <h3 className="title">Card 3</h3>
+    <h3 className="title">LinkedIn</h3>
     <div className="bar">
       <div className="emptybar"></div>
       <div className="filledbar"></div>
@@ -44,7 +44,7 @@ function SMCard() {
     </div>
   </div>
   <div className="card">
-    <h3 className="title">Card 4</h3>
+    <h3 className="title">GitHub</h3>
     <div className="bar">
       <div className="emptybar"></div>
       <div className="filledbar"></div>
@@ -56,7 +56,7 @@ function SMCard() {
     </div>
   </div>
 </div>
-        </body>
+       
 
     )
 }
