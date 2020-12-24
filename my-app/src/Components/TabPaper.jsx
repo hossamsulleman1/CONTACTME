@@ -6,6 +6,7 @@ import Content from './Content';
 import BottomBar from './BottomBar';
 import UserList from './UserList';
 import TabsP from './TabsP';
+import '../Css/Fonts.css'
 
 const useStyles = makeStyles((theme) => ({
     paper: {
@@ -27,7 +28,8 @@ return (
     <Grid container direction="column">
     <Grid item>
       {/* this is where the header will be  */}
-      <TabsP></TabsP>
+    
+      <p className='SubHeading'>Discover Users</p>
     </Grid>
             {/* grids can be items grids containers or both at the same time  */}
     <Grid item container>
@@ -38,6 +40,9 @@ return (
 {/* this is where the content will be  */}
 
 
+      <Paper>
+      <TabsP></TabsP>
+      </Paper>
 </Grid>
       
       <Grid item xs={0} sm={2} />

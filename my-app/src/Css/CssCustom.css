@@ -13,6 +13,10 @@
   display: flex;
 }
 
+.paddingright{
+  padding-right: 20px;
+}
+
 .PaddingTopBottom {
   padding-top: 30px;
   padding-bottom: 30px;

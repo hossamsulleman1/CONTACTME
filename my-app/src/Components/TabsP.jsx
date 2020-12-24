@@ -6,6 +6,10 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
+import UserList from './UserList';
+import CreateU from './CreateU'
+import ExploreIcon from '@material-ui/icons/Explore';
+import AddIcon from '@material-ui/icons/Add';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -68,22 +72,22 @@ export default function TabsP() {
           scrollButtons="auto"
           aria-label="scrollable auto tabs example"
         >
-          <Tab label="Item One" {...a11yProps(0)} />
-          <Tab label="Item Two" {...a11yProps(1)} />
-          <Tab label="Item Three" {...a11yProps(2)} />
+          <Tab label="EXPLORE" icon={<AddIcon />} {...a11yProps(0)} />
+          <Tab label="UPLOAD" icon={<ExploreIcon />} {...a11yProps(1)} />
+          {/* <Tab label="Item Three" {...a11yProps(2)} />
           <Tab label="Item Four" {...a11yProps(3)} />
           <Tab label="Item Five" {...a11yProps(4)} />
           <Tab label="Item Six" {...a11yProps(5)} />
-          <Tab label="Item Seven" {...a11yProps(6)} />
+          <Tab label="Item Seven" {...a11yProps(6)} /> */}
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
-        Item One
+       <UserList></UserList>
       </TabPanel>
       <TabPanel value={value} index={1}>
-        Item Two
+       <CreateU/>
       </TabPanel>
-      <TabPanel value={value} index={2}>
+      {/* <TabPanel value={value} index={2}>
         Item Three
       </TabPanel>
       <TabPanel value={value} index={3}>
@@ -97,7 +101,7 @@ export default function TabsP() {
       </TabPanel>
       <TabPanel value={value} index={6}>
         Item Seven
-      </TabPanel>
+      </TabPanel> */}
     </div>
   );
 }

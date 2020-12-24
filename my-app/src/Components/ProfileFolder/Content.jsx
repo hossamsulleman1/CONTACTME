@@ -14,6 +14,8 @@ import FriendsAvatarList from "./FriendsAvatarList";
 import { useContext } from "react";
 // import { SemContext } from "../../SemContext";
 import SMCard from '../SMCard';
+import ChipSet from '../ChipSet'
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -42,6 +44,10 @@ function Content(props) {
           <div className="headingdiv">
             {/* <p className="HomeTitleSmall">HEY, Welcome To </p> */}
             <p className="HomeTitle">HOSSAM</p>
+
+           
+      
+
           </div>
 
           <Divider />
@@ -76,10 +82,15 @@ function Content(props) {
         <Grid item xs={6}>
           <div className="avatardiv">
             <Avatar className={classes.large} 
-            // src={authInfo.photoURL}
+            src='https://lh3.googleusercontent.com/a-/AOh14Gh44yE770ieP78t8bjwveUFJR3ihG8mAcY2WA0pRg=s96-c'
             >
               H
             </Avatar>
+            <br/>
+            <br/>
+
+          <ChipSet></ChipSet>
+
 
             <div className="friendsdiv">
               <div className="justifycenter">
