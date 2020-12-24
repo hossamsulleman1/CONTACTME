@@ -1,6 +1,9 @@
 import "./App.css";
-import IconNav from "./Components/IconNav";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
+import MainPage from './Components/MainPage'
+import './Css/Fonts.css'
+import './Css/CssCustom.css'
+import './Css/Card.css'
 
 const theme = createMuiTheme({
   palette: {
@@ -11,7 +14,7 @@ const theme = createMuiTheme({
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <IconNav></IconNav>
+<MainPage></MainPage>
     </ThemeProvider>
   );
 }

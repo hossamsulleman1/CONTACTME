@@ -3,13 +3,17 @@ import Avatar from "@material-ui/core/Avatar";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 import Paper from "@material-ui/core/Paper";
-
+// import RadarChart from "../Graphs/RadarChart";
+// import PieWithLabel from "../Graphs/PieWithLabel";
 import Divider from "@material-ui/core/Divider";
 import React, { useState } from "react";
 import { Text, Heading } from "rebass";
 import { makeStyles } from "@material-ui/core/styles";
 import AvatarGroup from "@material-ui/lab/AvatarGroup";
 import FriendsAvatarList from "./FriendsAvatarList";
+import { useContext } from "react";
+// import { SemContext } from "../../SemContext";
+import SMCard from '../SMCard';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -30,25 +34,37 @@ const useStyles = makeStyles((theme) => ({
 
 function Content(props) {
   const classes = useStyles();
-
+  // const [authInfo , setAuthInfo] = useContext(SemContext)
   return (
     <Container>
       <Grid container spacing={3}>
         <Grid item xs={6}>
           <div className="headingdiv">
-            <p className="HomeTitleSmall">GET IN TOUCH WITH, HOSSAM</p>
-            <p className="HomeTitle">{props.Name}</p>
+            {/* <p className="HomeTitleSmall">HEY, Welcome To </p> */}
+            <p className="HomeTitle">HOSSAM</p>
           </div>
 
           <Divider />
           <div className="statsdiv">
-            
-            <p className="HomeTitleMedium">Email</p>
-            <p>Hossamsulleman@gmail.com</p>
-            <p className="HomeTitleMedium">Number</p>
-            <p>07738646154</p>
+            {/* <p className="HomeTitleMedium">LAST SIGN IN</p> */}
+            {/* <p>{authInfo.lastSignInTime}</p> */}
+            {/* FIX */}
+            {/* <p className="HomeTitleMedium">MEMBER SINCE</p> */}
+            {/* <p>{authInfo.creationTime}</p> */}
+            {/* <p className="HomeTitleMedium">HOURS LOGGED</p>
+            <p>{props.HoursLogged}</p>
             <p className="HomeTitleMedium">CHECKLIST TASKS COMPLETED</p>
-            <p>{props.TasksCompleted}</p>
+            <p>{props.TasksCompleted}</p> */}
+
+<p className="SubHeading">Social Media</p>
+
+
+
+<SMCard></SMCard>
+
+
+
+
           </div>
           <br></br>
           <br></br>
@@ -59,7 +75,9 @@ function Content(props) {
         </Grid>
         <Grid item xs={6}>
           <div className="avatardiv">
-            <Avatar className={classes.large} src={props.PhotoUrl}>
+            <Avatar className={classes.large} 
+            // src={authInfo.photoURL}
+            >
               H
             </Avatar>
 
@@ -83,19 +101,7 @@ function Content(props) {
         </Grid>
       </Grid>
 
-      {/* GRAPHS CONTAINER  */}
-      <Container>
-        <p className="HomeTitleSmall">PERSONAL BLEND</p>
-        <Grid container spacing={3}>
-          <Grid item xs>
-            {/* <PieWithLabel></PieWithLabel> */}
-          </Grid>
-          <Grid item xs>
-            {/* <RadarChart></RadarChart> */}
-          </Grid>
-        </Grid>
-      </Container>
-      {/* GRAPHS CONTAINER END  */}
+    
     </Container>
   );
 }
