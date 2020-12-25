@@ -37,7 +37,7 @@ return (
 <Grid item xs={12} sm={8}>
 {/* this is where the content will be  */}
 <Content></Content>
-<TabPaper></TabPaper>
+
 
 </Grid>
       

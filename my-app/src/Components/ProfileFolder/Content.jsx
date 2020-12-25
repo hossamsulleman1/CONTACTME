@@ -15,7 +15,7 @@ import { useContext } from "react";
 // import { SemContext } from "../../SemContext";
 import SMCard from '../SMCard';
 import ChipSet from '../ChipSet'
-
+import AvatarChip from '../AvatarChip'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -38,49 +38,23 @@ function Content(props) {
   const classes = useStyles();
   // const [authInfo , setAuthInfo] = useContext(SemContext)
   return (
-    <Container>
+    // <Container>
       <Grid container spacing={3}>
-        <Grid item xs={6}>
+        <Grid item xs={12} md={8}>
           <div className="headingdiv">
             {/* <p className="HomeTitleSmall">HEY, Welcome To </p> */}
             <p className="HomeTitle">HOSSAM</p>
 
-           
-      
 
           </div>
 
-          <Divider />
-          <div className="statsdiv">
-            {/* <p className="HomeTitleMedium">LAST SIGN IN</p> */}
-            {/* <p>{authInfo.lastSignInTime}</p> */}
-            {/* FIX */}
-            {/* <p className="HomeTitleMedium">MEMBER SINCE</p> */}
-            {/* <p>{authInfo.creationTime}</p> */}
-            {/* <p className="HomeTitleMedium">HOURS LOGGED</p>
-            <p>{props.HoursLogged}</p>
-            <p className="HomeTitleMedium">CHECKLIST TASKS COMPLETED</p>
-            <p>{props.TasksCompleted}</p> */}
+          </Grid>
 
-<p className="SubHeading">Social Media</p>
-
-
-
-<SMCard></SMCard>
-
-
-
-
-          </div>
-          <br></br>
-          <br></br>
-          <br></br>
-          <Divider />
-
-          <div className="statsdiv"></div>
-        </Grid>
-        <Grid item xs={6}>
-          <div className="avatardiv">
+          <Grid item xs={12} md={2}>
+         
+         <div className='floatright'>
+           {/* not real class */}
+         <div className="avatardiv">
             <Avatar className={classes.large} 
             src='https://lh3.googleusercontent.com/a-/AOh14Gh44yE770ieP78t8bjwveUFJR3ihG8mAcY2WA0pRg=s96-c'
             >
@@ -88,33 +62,65 @@ function Content(props) {
             </Avatar>
             <br/>
             <br/>
-
-          <ChipSet></ChipSet>
-
-
-            <div className="friendsdiv">
-              <div className="justifycenter">
-                <Divider></Divider>
-
-                <p className="SubHeading">ALL FRIENDS</p>
-                <Divider></Divider>
-                <br></br>
-                <Button>Add Friends</Button>
-              </div>
-
-              <div className="friendsdiv2">
-                <Container>
-                  <FriendsAvatarList></FriendsAvatarList>
-                </Container>
-              </div>
+            <div className='center'>
+              {/* not real class */}
+            <ChipSet></ChipSet>
             </div>
-          </div>
-        </Grid>
-      </Grid>
+            </div>
+            </div>
+             
+</Grid>
 
-    
-    </Container>
+<Grid item md={6}>
+<p className="SubHeading">ALL FRIENDS</p>
+                
+
+                {/* List */}
+<AvatarChip></AvatarChip>
+
+</Grid>
+
+<Grid item md={6}>
+
+<Button>Add Friends</Button>
+              
+
+             
+          
+              <Container>
+                <FriendsAvatarList></FriendsAvatarList>
+              </Container>
+         
+</Grid>
+        
+
+<Grid item xs={12}>
+
+<p className="SubHeading">Social Media</p>
+
+
+
+<SMCard></SMCard>
+
+<Divider />
+
+</Grid>
+
+
+<Grid item xs={12}>
+  
+  
+  
+  </Grid>}
+
+
+
+
+
+
+
+  </Grid>
   );
-}
+} 
 
 export default Content;
