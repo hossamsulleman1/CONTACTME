@@ -13,9 +13,9 @@ const theme = createMuiTheme({
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
+    // <ThemeProvider theme={theme}>
 <MainPage></MainPage>
-    </ThemeProvider>
+    // </ThemeProvider>
   );
 }
 

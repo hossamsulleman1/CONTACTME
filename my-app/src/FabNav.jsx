@@ -21,7 +21,6 @@ import MoreIcon from '@material-ui/icons/MoreVert';
 import PropTypes from 'prop-types';
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
-import useSpring  from 'react-spring/web.cjs'; 
 
 const useStyles = makeStyles((theme) => ({
     text: {
@@ -52,9 +51,29 @@ const useStyles = makeStyles((theme) => ({
       margin: '0 auto',
     },
   }));
+
+
+  function rand() {
+    return Math.round(Math.random() * 20) - 10;
+  }
   
-  function SpringModal() {
+  function getModalStyle() {
+    const top = 50 + rand();
+    const left = 50 + rand();
+  
+    return {
+      top: `${top}%`,
+      left: `${left}%`,
+      transform: `translate(-${top}%, -${left}%)`,
+    };
+  }
+
+  
+  
+  function SimpleModal() {
     const classes = useStyles();
+    // getModalStyle is not a pure function, we roll the style only on the first render
+    const [modalStyle] = React.useState(getModalStyle);
     const [open, setOpen] = React.useState(false);
   
     const handleOpen = () => {
@@ -64,7 +83,16 @@ const useStyles = makeStyles((theme) => ({
     const handleClose = () => {
       setOpen(false);
     };
-
+  
+    const body = (
+      <div style={modalStyle} className={classes.paper}>
+        <h2 id="simple-modal-title">Text in a modal</h2>
+        <p id="simple-modal-description">
+          Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+        </p>
+        {/* <SimpleModal /> */}
+      </div>
+    );
   }
 
 function FabNav() {
@@ -75,7 +103,9 @@ function FabNav() {
  {/* <IconButton edge="start" color="inherit" aria-label="open drawer">
         <MenuIcon />
       </IconButton> */}
-      <Fab color="secondary" onClick={handleOpen} aria-label="add" className={classes.fabButton}>
+      <Fab color="secondary"
+    //    onClick={handleOpen}
+       aria-label="add" className={classes.fabButton}>
         <AddIcon />
       </Fab>
       {/* <div className={classes.grow} />
@@ -86,26 +116,15 @@ function FabNav() {
         <MoreIcon />
       </IconButton> */}
       
-
-<Modal
-aria-labelledby="spring-modal-title"
-aria-describedby="spring-modal-description"
-className={classes.modal}
-open={open}
-onClose={handleClose}
-closeAfterTransition
-BackdropComponent={Backdrop}
-BackdropProps={{
-  timeout: 500,
-}}
->
-<Fade in={open}>
-  <div className={classes.paper}>
-    <h2 id="spring-modal-title">Spring modal</h2>
-    <p id="spring-modal-description">react-spring animates me.</p>
-  </div>
-</Fade>
-</Modal>
+{/* dewdaisohjfushifhsudifhiuasdfhadpu9fhisdhpfiuhsei;fihusia;hdfhusdhjfpiaudhs;f[oiu;hsdfo;un comment asap 106;39 aswell] */}
+      {/* <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="simple-modal-title"
+        aria-describedby="simple-modal-description"
+      >
+        {body}
+      </Modal> */}
 </div>
     )
 }

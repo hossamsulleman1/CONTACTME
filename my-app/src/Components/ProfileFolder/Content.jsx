@@ -45,7 +45,7 @@ function Content(props) {
             {/* <p className="HomeTitleSmall">HEY, Welcome To </p> */}
             <p className="HomeTitle">HOSSAM</p>
 
-
+<Divider></Divider>
           </div>
 
           </Grid>
@@ -76,7 +76,11 @@ function Content(props) {
                 
 
                 {/* List */}
-<AvatarChip></AvatarChip>
+                <div>
+                  {/* chip div flexbox this*/}
+                  <AvatarChip></AvatarChip>
+                </div>
+
 
 </Grid>
 
